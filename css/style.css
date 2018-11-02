@@ -481,9 +481,8 @@ i:hover {
 }
 
 .slick-dots {
-	width: 15%;
-	margin: 0 auto;
-	display: block;
+	display: flex;
+	justify-content: center;
 }
 
 .slick-dots li:hover {
@@ -508,7 +507,7 @@ i:hover {
 
 /*---------------PARTNERS--------------------*/
 .section-partners {
-	padding: 60px 0 50px 0;
+	padding: 60px 10px 50px 10px;
 }
 
 .partners-logo {
@@ -589,7 +588,6 @@ textarea {
 	text-transform: uppercase;
 	border-radius: 3px;
 	background-color: #fed136;
-	padding: 22px 50px;
 	color:#fff;
 }
 
@@ -656,14 +654,20 @@ textarea {
 
 @media (max-width: 767px) {
 
-.title {
+	.title {
 		font-size: 34px;
+		padding-bottom: 20px;
 	}
 
 	.subtitle {
 		font-size: 26px;
 		margin-top: 35px;
+		padding-top: 20px;
 	}
+
+	.section {
+    padding: 50px 0;
+  }
 
 	.column {
 		width: 100%;
@@ -672,6 +676,7 @@ textarea {
 
 	.block {
 		padding-top: 25px; 
+		margin-bottom: 20px;
 	}
 
 	.about-content,
@@ -718,8 +723,8 @@ textarea {
 	.hamburger {
 		display: block;
 		position: absolute;
-		right: 10px;
-		top: 10px;
+		right: 15px;
+		top: 44.5px;
 		color: #fff;
 		font-size: 22px;
 	}
@@ -739,7 +744,7 @@ textarea {
 	}
 
 	.nav li{
-		background-color: rgba(254, 209, 54, 0.3)
+		background-color: rgba(254, 209, 84, 0.3)
 	}
 
 	.left-part {
@@ -758,6 +763,26 @@ textarea {
 		padding: 0;
 		text-align: center;
 	}
+}
 
+@media (max-width: 767px) {
+	.title {
+		font-size: 30px;
+	}
+
+	.subtitle {
+		margin-top: 90px;
+	}
+
+	.section {
+    padding: 30px 0;
+  }
+
+  .main-title {
+  	font-size: 25px;
+  }
+  .super-button {
+  	width: 60%;
+  }
 }
 
